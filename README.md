@@ -24,8 +24,8 @@ custom/
 ├── synaps_lpms3.py           # Main library for LPMS3 communication
 ├── example_basic_read.py     # Example: Reading basic raw IMU data
 ├── example_read_heading.py  # Example: Reading heading from raw data
-├── main.py                   # Advanced examples (calibration, etc.)
-├── imu_threaded.py          # Threaded implementation for real-time reading
+├── example_main_read.py                   # Advanced examples (calibration, etc.)
+├── example_read_with_thread_and_log.py          # Threaded implementation for real-time reading
 └── README.md                 # Project documentation
 ```
 
@@ -82,7 +82,7 @@ This example shows:
 - How to calculate simple heading (magnetometer only)
 - How to apply magnetic declination and heading offset
 
-### 3. Advanced Usage (main.py)
+### 3. Advanced Usage (example_main_read.py)
 
 Advanced examples including calibration and filtering:
 
@@ -113,7 +113,7 @@ for frame in imu.readStream():
 imu.close()
 ```
 
-### 4. Threaded Real-time Reading (imu_threaded.py)
+### 4. Threaded Real-time Reading (example_read_with_thread_and_log .py)
 
 ```python
 from imu_threaded import ImuThreaded
